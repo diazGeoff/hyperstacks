@@ -10,7 +10,7 @@ http://www.templatemo.com/tm-492-app-starter
 
 
 body {
-		background: #1c1c1c;
+		background: #18262d;
     font-family: 'gothamBook', sans-serif;
     font-style: normal;
     padding-top: 70px;
@@ -83,13 +83,16 @@ hr {
 
 .section-btn:hover {
   background: transparent;
-  border-top-color: #ffffff;
-  border-right-color: #222;
-  border-bottom-color: #ffffff;
-  border-left-color: #222;
+  border-top-color: #c4d5de;
+  border-right-color: #175679;
+  border-bottom-color: #134661;
+  border-left-color: #175679;
   color: #ffffff;
 }
 
+#home .section-btn:active, .section-btn:focus {
+  border-color: #fff;
+}
 
 /*---------------------------------------
     General               
@@ -136,8 +139,17 @@ a:hover, a:active, a:focus {
 
 .section-title {
   position: relative;
-  padding-bottom: 62px;
+  padding-bottom: 20px;
   text-align: center;
+}
+
+#newsletter .section-title h1 {
+  color:#333;
+}
+
+.section-body {
+  position: relative;
+  padding-bottom: 40px;
 }
 
 #about,
@@ -206,14 +218,14 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .navbar-default {
-    background: #ffffff;
+    background: #175679;
     border: none;
     box-shadow: none;
     margin: 0 !important;
 }
 
 .navbar-default .navbar-brand {
-  color: #00516C;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
@@ -227,7 +239,7 @@ a:hover, a:active, a:focus {
 }
 
 .navbar-default .navbar-nav li a {
-    color: #656565;
+    color: #153a4e;
     font-size: 14px;
     font-weight: 500;
     line-height: 50px;
@@ -244,14 +256,14 @@ a:hover, a:active, a:focus {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #656565;
+    color: #ffffff;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    color: #00516C;
+    color: #3f93af;
     background-color: transparent;
 }
 
@@ -287,15 +299,11 @@ a:hover, a:active, a:focus {
     -webkit-align-items: center;
     -ms-flex-align: center;
      align-items: center;
-    height: 80vh;
+    height: 92vh;
     position: relative;
 }
 
 #home .overlay {
-  background: #4776E6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #00516C , #000); /* Chrome 10-25, Safari 5.1-6 */ 
-  background: linear-gradient(to left, #00516C , #000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: 0.9;
   position: absolute;
   width: 100%;
   height: 80vh;
@@ -334,7 +342,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #divider {
-  background-color: #128FB8;
+  background-color: #175679;
 }
 
 #divider p {
@@ -385,6 +393,13 @@ a:hover, a:active, a:focus {
   color: #1dc9e3;
 }
 
+#divider .section-btn {
+  background: #128FB8;
+}
+
+#divider .section-btn:hover {
+  background: transparent !important;
+}
 
 /*---------------------------------------
     Screenshot section              
@@ -393,7 +408,7 @@ a:hover, a:active, a:focus {
 #screenshot .col-md-3 {
   display: block;
   width: 100%;
-  padding-bottom: 1rem;
+  padding: 0 0.2em 1rem 0.2rem;
 }
 
 #screenshot img {
@@ -444,7 +459,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #pricing {
-  background: #128FB8 ;
+  background: #175679 ;
 }
 
 #pricing .pricing-plan {
@@ -463,14 +478,14 @@ a:hover, a:active, a:focus {
 }
 
 #pricing .pricing-plan .section-btn {
-  background: #790C28;
+  background: #128eb7;
   position: relative;
   top: 20px;
 }
 
 #pricing .pricing-plan .section-btn:hover {
   background-color: #ffffff;
-  color: #222;
+  color: #175679;
 }
 
 
@@ -785,7 +800,7 @@ footer p {
 @media (max-width: 980px) {
 
   h1 {
-    font-size: 38px;
+    font-size: 76px;
   }
   
   .section-btn {
@@ -850,7 +865,7 @@ footer p {
   }
 
   #home, #home .overlay {
-    height: 100vh;
+    height: 140vh;
   }
 
   #home img {
@@ -892,9 +907,9 @@ footer p {
 
 /*custom css*/
 
-.logo-nav{    height: auto;  display: inline-block !important;    width: 60px;}
-  .hire-us{background: #790C28; color: white !important; font-weight: bold;}
-  .hire-us:hover{color:#790C28 !important;}
+.logo-nav{    height: auto;  display: inline-block !important;    width: 24px; margin-right: 6px;}
+  .hire-us{background: #164f6d; color: white !important; font-weight: bold;}
+  .hire-us:hover{color:#175679 !important; background: #ffffff !important;}
 
   .tools-logo{height: 75px; width:  auto; margin:15px auto; display: block;}
  #newsletter h2,  #newsletter p {color: #333;}
